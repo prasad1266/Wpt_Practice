@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bootstrap Demo</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+       
+        .img{
+            height: 585px;
+        }
+
+       .footer{
+  display: flex;
+  width: 100%;
+  height: 450px;
+  background-color: #3F51B5;
+ 
+}
+.fst{
+  display: flex;
+ width: 50%;
+ border-color:solid red 2px;
+  
+}
+
+#one{
+  margin-top: 30px;
+  width: 50%;
+display: grid;
+justify-content: space-around;
+gap: 2px;
+
+}
+#one a{
+  font-style:italic;
+  font-weight: bold;
+  font-family:Montaga;
+  
+  color: white;
+}
+#two{
+  margin-top: 30px;
+  width: 50%;
+display: grid;
+justify-content: space-around;
+gap: 2px;
+
+}
+#two a{
+  font-style: italic;
+  font-weight: bold;
+  font-family:Montaga;
+  color: white;
+}
+
+
+.scnd{
+  width: 50%;
+ display: block;
+ margin-top: 100px;
+ color: white;
+ font-weight: bold;
+ font-style:oblique;
+ margin-left: 300px;
+}
+.scnd h2{
+ margin-bottom: 10px;
+}
+.scnd p{
+color: white;
+ margin-bottom: 15px;
+}
+.scnd >div{
+  display: flex;
+}
+
+.scnd >div img{
+  width: 110px;
+  margin-left: 5px;
+  margin-top: 20px;
+}
+.scl {
+ display: flex;
+ height: 40px;
+ width: 40px;
+ gap: 10px;
+}
+a{
+  text-decoration: none;
+}
+
+.xyz {
+    background-color:none;
+  
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 200px;
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+    z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}   
+             
+        
+    </style>
+  </head>
+  <body>
+   
+
+    
+    <nav class="navbar navbar-expand-lg fixed-top " style="background-color: #FAFAFA;">
+        <div class="container-fluid">
+          <a  onclick="toggleDropdown()" class="navbar-brand xyz" href="#">Food Zone</a>
+          <div id="myDropdown" class="dropdown-content">
+           
+            <a href="#contact">Menu</a>
+            <a href="#contact">Contact</a>
+            <a href="#contact">Home</a>
+            <a href="#contact">Home </a>
+            <a href="#contact"> Menu </a>
+            <a href="#contact">Contact</a>
+            <a href="#home">Carriers</a>
+            <a href="#about">Caterring</a>
+        </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cart</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Food Item
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Burgers</a></li>
+                  <li><a class="dropdown-item" href="#">Pizza</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">other Items</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-disabled="false">Careers</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search Item" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1st.jpg" class="d-block w-100 img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="2nd.jpg" class="d-block w-100 img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="3rd.jpg" class="d-block w-100 img" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <h2>Our  Partners</h2>
+         <section class="customer-logos slider">
+            <div class="slide"><img src="https://image.freepik.com/free-vector/luxury-letter-e-logo-design_1017-8903.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/3d-box-logo_1103-876.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/blue-tech-logo_1103-822.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/colors-curl-logo-template_23-2147536125.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/abstract-cross-logo_23-2147536124.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/football-logo-background_1195-244.jpg"></div>
+            <div class="slide"><img src="https://image.freepik.com/free-vector/background-of-spots-halftone_1035-3847.jpg"></div>
+           
+         </section>
+      </div>
+
+      <div class="footer">
+
+        <div class="fst">
+<div id="one">
+    <a href="home.html">HOME</a>
+    <a href="menu1.html">CATERING</a>
+    <a href="home.html">GIFT CARDS</a>
+    <a href="home.html">Fundraisers & Charities</a>
+    <a href="home.html">Careers</a> 
+    <div class="scl">
+            
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTtTPwBuY15gVsSKAxAdC7qTjcbL9KWyFkaA&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9CaXxU6kmQw9CIAOKObHGD3o6nT70m4ZIgg&usqp=CAU" alt="">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotQk5DK3aeBEELNn3Qd31ZGMnCorBDk2vnA&usqp=CAU" alt="">
+      </div>
+</div>
+<div id="two">
+    <a href="home.html">Franchising</a>
+    <a href="home.html">Investors</a>
+    <a href="home.html">Press Releases</a>
+    <a href="home.html">Contact Us</a>
+    <a href="home.html">Feedback</a>
+
+</div>
+
+        </div>
+        <div class="scnd">
+  <h2>Join Loco Rewards</h2>
+  <p>Earn points with every order, receive a birthday
+     reward and other valuable offers throughout the
+      year. Plus, special app features to order ahead, pay,
+       and save your favorites.</p>
+  <a href="home.html">Learn More</a>
+  <div href="menu.html" >
+    
+    <img src="https://www.elpolloloco.com/content/img/download-button-app-store.webp" alt="">
+    <img src="https://www.elpolloloco.com/content/img/download-button-google.webp" alt="">
+  </div>
+        </div>
+      
+      </div>
+    
+      <!-- <div class="row">
+        <div class="col-6">
+<p>THis is 1st para</p>
+        </div>
+        <div class="col-6">
+            <p>This is 2nd para</p>
+        </div>
+      </div> -->
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <script>
+    function toggleDropdown() {
+    var dropdown = document.getElementById("myDropdown");
+    dropdown.style.display = (dropdown.style.display === 'block') ? 'none' : 'block';
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.xyz')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.style.display === 'block') {
+                openDropdown.style.display = 'none';
+            }
+        }
+    }
+}
+  </script>
+</html>
