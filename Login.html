@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+   <link rel="stylesheet" href="in.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+  body{
+    background-color:  #9112e7;
+  }
+.container {
+    background-color:white;
+    width: 40%;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    font-family: 'Lato', sans-serif;
+    flex-direction: column; 
+    align-items: center;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  */
+    margin: auto;
+    margin-top: 120px; 
+  }
+  
+  form {
+    text-align: center;
+  }
+  
+  #Forget {
+    display: block; 
+    margin-top: 10px; 
+  }
+  
+  input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  label, input {
+    margin-bottom: 10px;
+  }
+  input{
+    width: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    outline: 0;
+    border-bottom-color: black;
+
+
+  }
+  </style>
+
+<body>
+    <div class="container">
+        <h1>Login </h1>
+        <form action="FoodZOne.html">
+            <label for="user">Username</label>
+            <input type="text" placeholder="Enter Username"> <br> <br>
+            <label for="pass">password</label>
+            <input type="password" placeholder="Enter Passwoed">&nbsp;
+            <a id="Forget" href="#">Forget password</a> <br> <br>
+            <input type="submit" value="Login"> <br><br>
+            <p>Need Sign up? <a href="outer.html">Sign up</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
